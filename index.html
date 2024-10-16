@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleación de Cobre y Zinc</title>
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Texto sobre la imagen */
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            padding: 20px; /* Añade un padding general para separar el texto de los bordes */
+            border-radius: 8px;
+            max-width: 90%; /* Limita el ancho del contenedor en pantallas grandes */
+        }
+
+        /* Clase personalizada para texto extra grande */
+        .texto-extra-grande {
+            font-size: 8vw; /* Tamaño basado en el ancho de la ventana para hacerlo más responsivo */
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar legibilidad */
+        }
+
+        /* Contenedor principal */
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Estilo para el <h1> estándar */
+        .container h1 {
+            font-size: 3em; /* Tamaño estándar aumentado */
+            color: #4CAF50;
+        }
+        .container h2 {
+            font-size: 2em; /* Tamaño estándar aumentado */
+            color: #4caf8c;
+        }
+        .container footer {
+            color: #0a6545;
+        }
+
+        .container p {
+            font-size: 1.5em; /* Tamaño del párrafo */
+        }
+
+        .header-text h2 {
+            margin-bottom: 5px; /* Reduce el espacio debajo del título */
+        }
+
+        .header-text p {
+            margin-top: 0; /* Elimina el espacio encima del párrafo */
+        }
+
+        .imagen-zinc {
+            width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            max-width: 600px; /* Tamaño máximo de la imagen */
+            margin: 20px 10px; /* Espacio arriba y abajo de la imagen */
+        }
+        .imagen-cobre{
+            width: 100%; 
+            height: auto; 
+            max-width: 388px; 
+            margin: 20px 10px; 
+        }
+        .imagen-hidro{
+            width: 100%; 
+            height: auto; 
+            max-width: 462px; 
+            margin: 20px 10px; 
+        }
+        .imagen-con-texto {
+            text-align: center; /* Centra tanto la imagen como el texto */
+            margin: 20px 0; /* Añade espacio alrededor del contenedor */
+        }
+
+        .pie-de-pagina {
+            background-color: #333; /* Color de fondo del pie de página */
+            color: white; /* Color del texto */
+            text-align: center; /* Centra el texto */
+            padding: 15px 0; /* Espacio interno arriba y abajo del pie de página */
+            position: relative; /* Posicionamiento relativo para mayor flexibilidad */
+            width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+            bottom: 0; /* Se coloca en la parte inferior de la página */
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 600px) {
+            .header-text h2 {
+                font-size: 3em; /* Ajuste para pantallas pequeñas */
+            }
+
+            .header-text p {
+                font-size: 1em;
+            }
+
+            .container h1 {
+                font-size: 2.5em;
+            }
+
+            .container p {
+                font-size: 1.2em;
+            }
+            
+            .pie-de-pagina {
+                font-size: 0.8em; /* Reduce el tamaño del texto en pantallas pequeñas */
+                padding: 10px 0; /* Ajusta el espacio en pantallas pequeñas */
+            }
+
+            .header-text {
+                padding: 10px; /* Reduce el padding en pantallas pequeñas */
+            }
+
+            .texto-extra-grande {
+                font-size: 6vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Encabezado con imagen y texto superpuesto -->
+    <header>
+        <img src="img/laton.jpg" alt="Encabezado de la Página">
+        <div class="header-text">
+            <h2 class="texto-extra-grande">¡Bienvenido!</h2>
+            <h1>Aleación metálica entre Cobre y Zinc.</h1>
+        </div>
+    </header>    
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h1>Explicación del experimento:</h1>
+        <p>Este es un tipo de experimento de electrodeposición para que piezas de cobre adquieran una apariencia plateada o dorada.</p>
+        <p>Los principales materiales para realizar el experimento son el Zinc (Zn), piezas de Cobre (Cu) e Hidróxido de Sodio (NaOH).</p>
+
+        <div class="imagen-con-texto">
+            <img src="img/zinc.jpg" alt="Imagen de Zinc" class="imagen-zinc">
+            <p class="texto-debajo">Zinc (Zn)</p>
+            <img src="img/cobre.jpg" class="imagen-cobre" alt="Imagen de Cobre">
+            <p class="texto-debajo">ZCobre (Cu)</p>
+            <img src="img/hidro.jpg" class="imagen-hidro" alt="Imagen de Hidro">
+            <p class="texto-debajo">Hidroxido de Sodio (NaOH)</p>
+            <p>Se ocupara una Disolucion de Hidroxido de Sodio del 10%</p>
+            <p>Una vez hecha la Disolucion se lo añadira el Zinc.</p><br>
+        </div>
+
+        <h2>Proceso de Zinc con la Disolucion de Hidroxido de Sodio:</h2>
+        <p>Zn(s) + 2NaOH(aq) + 2H<sub>2</sub> O(l) → Na<sub>2</sub>[Zn(OH)<sub>4</sub>](aq) + H<sub>2</sub> (g)</p>
+        <p>Enseguida se le agrega la pieza de cobre y poco a poco adquirirá un color plateado esto debido al exceso de Zinc en la disolución.</p>
+        <h2>Exceso de Zinc:</h2>
+        <p>Zn(s) → Zn<sup>2+</sup>(aq) + 2e<sup>-</sup></p>
+        <p>Los electrones liberados pasaran a la pieza de cobre la cual actuara como cátodo reduciendo el ion zincato.</p>
+        <h2>Proceso de Reducción:</h2>
+        <p>[Zn(OH)<sub>4</sub>]<sup>2-</sup>(aq)+ 2e<sup>-</sup> → Zn(s) + 4OH<sup>-</sup>(aq)</p>
+        <p>Una vez la pieza de cobre este plateada se puede poner al calor y adquirirá un color dorado, esto ya que el Zinc pasará de estar solo por la superficie del cobre a entrar a la red cristalina del este.</p>
+    </div>
+    
+    <footer class="pie-de-pagina">
+        <p>© 2024 - Todos los derechos reservados. Creado por Cruz Rivera</p>
+    </footer>
+    
+</body>
+</html>
